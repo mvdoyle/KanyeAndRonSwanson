@@ -33,9 +33,9 @@ namespace KanyeWest
             //Ron Swanson URL
             var ronURL = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
             var ronResponse = _client.GetStringAsync(ronURL).Result;
-            var ronQuote = JArray.Parse(ronResponse).ToString().Replace('[', ' ').Replace(']', ' ').Trim();
+            var ronQuote = JArray.Parse(ronResponse);
 
-            return ronQuote;
+            return ronQuote[0].ToString();
         }
     }
 }

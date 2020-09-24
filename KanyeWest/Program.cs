@@ -13,9 +13,11 @@ namespace KanyeWest
 
             for (int i = 0; i < 5; i++)
             {
+                Console.WriteLine("------------------------");
                 Console.WriteLine($"Kanye: {quote.Kanye()}");
 
                 Console.WriteLine($"Ron Swanson: {quote.RonSwanson()}");
+               
             }
             
         }
